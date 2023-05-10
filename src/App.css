@@ -1,7 +1,8 @@
 .App {
   text-align:center;
-  
-  
+  background-color: #030303;
+  height: 100%;
+ 
   
 }
 .App-logo {
@@ -45,25 +46,28 @@
   margin-right: 20px;
   display: block;
   width: inherit;
+
   margin-bottom: 55px;
   padding-bottom: 55px;
   margin-top: 10px;
   font-size: 18px;
   padding-left: 0px;
   padding-right: 0px;
-  background-color:rgb(255, 255, 255);
+  background-color:rgb(0, 0, 0);
   padding-top: 1%;
   border-radius: 5%;
   height: auto;
   }
 
 .topnav {
-  
+  background-image: image();
   background-color: rgb(10, 9, 9);
   overflow: hidden;
   margin: 0px;
   cursor: pointer;
   display: flex;
+  color: #39aa04;
+  text-decoration: underline;
   justify-content: flex-end;
   padding: 0px;
   font-family:  "Lucida Handwriting" ;
@@ -89,6 +93,38 @@ h2,a{
   font-size:3vw;
   overflow:inherit;
 }
+.homepage{
+  color: rgb(128, 117, 107);
+  height: 100%;
+  position: fixed;
+  overflow:inherit;
+  margin: 0%;
+  line-height: 200px;
+  margin-left: 20%;
+  
+ 
+  text-align: center;
+  
+  background-color: black;
+}
+.rows{
+  background-color: #030303;
+  justify-content: space-around;
+}
+.profile{
+  color: aqua;
+  background-color: #cac6c6;
+ padding-left: 0%;
+  margin-right:80% ;
+  height: 100%;
+  width: 20%;
+  position: fixed;
+}
+.homepage p {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
 /* Style the links inside the navigation bar */
 .topnav a {
   float: left;
@@ -102,16 +138,19 @@ h2,a{
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
- 
-  color: hsl(240, 85%, 38%);
+
+.linkk:hover{
+  color: rgb(0, 255, 255);
+  text-decoration: underline;
 }
 
-/* Add an active class to highlight the current page */
-.topnav a.active {
-  background-color: #04AA6D;
-  color: hsl(240, 25%, 98%);
+/* visited link */
+.linkk:active{
+  color: rgb(0, 255, 0);
+  text-decoration: underline;
 }
+
+
 .footer {
   position: fixed;
   overflow: hidden;
@@ -124,7 +163,19 @@ h2,a{
   text-align: center;
 }
 img {
+  border-radius: 0%;
+  
+}
+h1 {
   border-radius: 20%;
+  color: #7e1f1f;
+  
+}
+.img2 {
+  border-radius: 0%;
+  width: 100%;
+ 
+  
   
 }
 .Cardbody{
@@ -140,4 +191,25 @@ img {
   width: 100%;
   width: inherit;
   display: block;
+}
+
+.sociallinks{
+  display: flex;
+  justify-content: space-around;
+  
+  
+  font-size: xx-small;
+  padding-left: 2%;
+ 
+  
+}
+.contact{
+  display: inline-flex;
+  cursor: none;
+  pointer-events: none;
+  
+  font-size: xx-small;
+  padding-left: 2%;
+ 
+  
 }

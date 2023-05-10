@@ -2,7 +2,7 @@ import React from 'react';
 
 import {  Link } from "react-router-dom";
 import  { BrowserRouter as Router} from 'react-router-dom';
-
+import ICON from './../RESOURCES/pexels.jpeg';
 let Navbar = (props) => {
     function refreshPage(){ 
         setTimeout(function(){
@@ -10,18 +10,18 @@ let Navbar = (props) => {
          }, 600); 
     }
     return(
-        <div class="topnav" id="myTopnav">
+        <div class="topnav" >
              <Router>
-         <Link onClick={ refreshPage } to="/"></Link>
-         <Link onClick={ refreshPage }to="/" >HOME</Link>
-         <Link onClick={ refreshPage }to="/About" >ABOUT</Link>
-         
-                      <Link onClick={ refreshPage } to="/Projects" >PROJECTS</Link>
+         <Link className='linkk' onClick={ refreshPage } to="/"></Link>
+         <Link className='linkk' onClick={ refreshPage }to="/" >HOME</Link>
+         <Link className='linkk' onClick={ refreshPage }to="/About" >ABOUT</Link>
+                     
+                      <Link className='linkk' onClick={ refreshPage } to="/Projects" >PROJECTS</Link>
                      
                      
                    </Router>
-                   <h4> +254797137565</h4>
-                   <a href="mailto:erickoome2017@gmail.com">EMAIL ME</a>
+                
+                   <a className='linkk' href="mailto:erickoome2017@gmail.com">EMAIL ME</a>
       </div>
     );
 }

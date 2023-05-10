@@ -1,11 +1,13 @@
 import React from 'react';
 import HOTEL from './../RESOURCES/HOTEL_BOOKING.pdf';
 import { Button,Row,Card,CardTitle,CardBody,CardSubtitle,CardText ,Col} from 'reactstrap';
+import ICON from './../RESOURCES/qq.jfif';
+import ICON2 from './../RESOURCES/ww.jfif';
 const Projects = (props) => {
     return(
         <div className='body-text'>
             
-                <h1>My Projects</h1>
+                <h1>My                                                                         Projects</h1>
                 <Row >
   <Col sm="6">
     <Card body color='light'>
@@ -15,7 +17,7 @@ const Projects = (props) => {
     overflow="inherit"
     
   
-    src="https://picsum.photos/900/270?grayscale"
+    src={ICON}
   />
       <CardTitle tag="h5">
         Project 1
@@ -33,7 +35,7 @@ const Projects = (props) => {
     <img
     height= "210rem" 
     alt=""
-    src="https://picsum.photos/318/180"
+    src={ICON2}
   />
       <CardTitle tag="h5">
         Project 2
